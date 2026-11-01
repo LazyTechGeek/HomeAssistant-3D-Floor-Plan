@@ -1,30 +1,33 @@
-# HomeAssistant-3D-Floor-Plan
+# Home Assistant 3D Floor Plan
 
-**Watch the full video:** [How to Add a 3D Floor Plan to Home Assistant (NeonPlan 3D)](VIDEO_URL)
+Add a 3D floor plan to your Home Assistant dashboard using the free NeonPlan 3D integration. This guide follows the same steps as the video.
 
-A step-by-step guide to adding a 3D floor plan to your Home Assistant dashboard, using the **NeonPlan 3D** integration by Mastershort. Each step links to the matching point in the video.
+Watch the video: [How to Add a 3D Floor Plan to Home Assistant (NeonPlan 3D)](VIDEO_URL)
 
-**Shout-out:** This guide features **NeonPlan 3D**, created by **Mastershort**. Original project: https://github.com/Mastershort/neonplan3d
+## Shout-out
 
-**Official user manual:** https://mastershort.de/en/neonplan3d/manual/?lang=en (English; change `lang=en` for other languages)
+This guide uses **NeonPlan 3D**, created by **Mastershort**: https://github.com/Mastershort/neonplan3d
+
+For the full official manual, see https://mastershort.de/en/neonplan3d/manual/?lang=en (English; change `lang=en` for other languages).
 
 To support Mastershort's future projects, you can donate here: https://www.paypal.com/donate/?hosted_button_id=Z3G2VWKSK5VJL
 
-> **Status:** Draft. Written while Home Assistant 2026.11 (which adds the Marketplace) is still being released. Steps may change once it's out.
+## Contents
+
+1. [Find the install button](#step-1-find-the-install-button-on-the-neonplan-github-page) ([▶ 00:30](VIDEO_URL&t=30s))
+2. [Open the Marketplace](#step-2-open-the-marketplace) ([▶ 01:00](VIDEO_URL&t=60s))
+3. [Download the integration](#step-3-download-the-integration) ([▶ 01:30](VIDEO_URL&t=90s))
+4. [Restart Home Assistant](#step-4-restart-home-assistant) ([▶ 02:00](VIDEO_URL&t=120s))
+5. [Add the integration](#step-5-add-the-integration) ([▶ 03:00](VIDEO_URL&t=180s))
+6. [Open the panel and draw your floor plan](#step-6-open-the-panel-and-draw-your-floor-plan) ([▶ 04:00](VIDEO_URL&t=240s))
+7. [Add the 3D card to your dashboard (optional)](#step-7-add-the-3d-card-to-your-dashboard-optional) ([▶ 06:00](VIDEO_URL&t=360s))
+
+Also covered: [Prerequisites](#prerequisites), [Manual install](#manual-install-docker-or-no-store-access-untested), [First run](#first-run-one-time-prompts-untested), and [the optional account step](#optional-create-a-free-account-untested).
 
 ## Prerequisites
 
 - Home Assistant **2025.1 or newer**.
 - Access to your Home Assistant config folder, if you use the manual install below.
-
-## Manual install (Docker or no store access) [UNTESTED]
-
-If you can't use the store, for example when running Home Assistant in Docker, copy the integration by hand:
-
-1. Download or clone https://github.com/Mastershort/neonplan3d.
-2. Copy the `custom_components/neonplan3d` folder (the whole folder, not individual files).
-3. Paste it into `config/custom_components/` in your Home Assistant config directory, so you end up with `config/custom_components/neonplan3d/`.
-4. Restart Home Assistant.
 
 ## Step 1: Find the install button on the NeonPlan GitHub page ([▶ 00:30](VIDEO_URL&t=30s))
 
@@ -63,6 +66,15 @@ When the download finishes, Home Assistant shows a **pending restart** notificat
 1. Add a card of type `custom:neonplan3d-card`, using the visual editor or YAML.
 2. You don't need to add it as a resource. The card loads automatically.
 3. Options such as `floor` and `height` are optional.
+
+## Manual install (Docker or no store access) [UNTESTED]
+
+If you can't use the store, for example when running Home Assistant in Docker, copy the integration by hand:
+
+1. Download or clone https://github.com/Mastershort/neonplan3d.
+2. Copy the `custom_components/neonplan3d` folder (the whole folder, not individual files).
+3. Paste it into `config/custom_components/` in your Home Assistant config directory, so you end up with `config/custom_components/neonplan3d/`.
+4. Restart Home Assistant.
 
 ## First run: one-time prompts [UNTESTED]
 
