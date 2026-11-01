@@ -73,3 +73,7 @@ The first time you open NeonPlan 3D from the sidebar, a pop-up offers free Hallo
 Only needed if you want the free packs. Click **Create a free account**, which opens the NeonPlan account page. You may see a cookie consent banner first. Accept or reject it as you prefer, then continue with the sign-up.
 
 ![Cookie consent banner on the account page](images/step-account-cookie-consent.png)
+
+Once the banner is dealt with, the page offers **Login** or **Register**. Registering gives you a free customer account. After you confirm your email, you get a NeonPlan 3D licence key, which unlocks the free packs (Fun pack: Pets, Fun pack: Halloween, and Module: Window watch).
+
+![Login and register options on the account page](images/step-account-login-register.png)
