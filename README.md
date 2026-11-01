@@ -43,10 +43,12 @@ Clicking the button takes you to your Home Assistant Marketplace (previously cal
 
 When the download finishes, Home Assistant shows a **pending restart** notification. Restart Home Assistant to finish installing the integration.
 
-## Step 5: Add the integration [UNTESTED] ([▶ 03:00](VIDEO_URL&t=180s))
+## Step 5: Add the integration ([▶ 03:00](VIDEO_URL&t=180s))
 
 1. Go to **Settings → Devices & services → Add integration**.
 2. Search for **NeonPlan 3D** and select it.
+3. A pop-up appears saying the integration will be added to your dashboard. Click **Submit**.
+4. You're taken to the integration page. Go back to the main Home Assistant page and you'll see **NeonPlan 3D** in the sidebar.
 
 ## Step 6: Open the panel and draw your floor plan [UNTESTED] ([▶ 04:00](VIDEO_URL&t=240s))
 
@@ -59,3 +61,9 @@ When the download finishes, Home Assistant shows a **pending restart** notificat
 1. Add a card of type `custom:neonplan3d-card`, using the visual editor or YAML.
 2. You don't need to add it as a resource. The card loads automatically.
 3. Options such as `floor` and `height` are optional.
+
+## First run: one-time prompts [UNTESTED]
+
+The first time you open NeonPlan 3D from the sidebar, it asks you to sign in or create a free account, or to continue without one. Read the prompt carefully before you click, because it may not appear again.
+
+> **Note:** Once you've completed the first-run prompts, they don't appear again. If you want to see them again, you'll need to uninstall and reinstall the integration.
