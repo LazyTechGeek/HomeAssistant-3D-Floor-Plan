@@ -6,6 +6,8 @@ A step-by-step guide to adding a 3D floor plan to your Home Assistant dashboard,
 
 **Shout-out:** This guide features **NeonPlan 3D**, created by **Mastershort**. Original project: https://github.com/Mastershort/neonplan3d
 
+**Official user manual:** https://mastershort.de/en/neonplan3d/manual/?lang=en (English; change `lang=en` for other languages)
+
 To support Mastershort's future projects, you can donate here: https://www.paypal.com/donate/?hosted_button_id=Z3G2VWKSK5VJL
 
 > **Status:** Draft. Written while Home Assistant 2026.11 (which adds the Marketplace) is still being released. Steps may change once it's out.
