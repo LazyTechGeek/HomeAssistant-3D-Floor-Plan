@@ -10,6 +10,20 @@ To support Mastershort's future projects, you can donate here: https://www.paypa
 
 > **Status:** Draft. Written while Home Assistant 2026.11 (which adds the Marketplace) is still being released. Steps may change once it's out.
 
+## Prerequisites
+
+- Home Assistant **2025.1 or newer**.
+- Access to your Home Assistant config folder, if you use the manual install below.
+
+## Manual install (Docker or no store access) [UNTESTED]
+
+If you can't use the store, for example when running Home Assistant in Docker, copy the integration by hand:
+
+1. Download or clone https://github.com/Mastershort/neonplan3d.
+2. Copy the `custom_components/neonplan3d` folder (the whole folder, not individual files).
+3. Paste it into `config/custom_components/` in your Home Assistant config directory, so you end up with `config/custom_components/neonplan3d/`.
+4. Restart Home Assistant.
+
 ## Step 1: Find the install button on the NeonPlan GitHub page ([▶ 00:30](VIDEO_URL&t=30s))
 
 Go to https://github.com/Mastershort/neonplan3d and find the button that opens the integration in the Home Assistant store. The wording on the button is "Open your Home Assistant instance and open the NeonPlan 3D repository inside HACS" (or similar, depending on the version).
