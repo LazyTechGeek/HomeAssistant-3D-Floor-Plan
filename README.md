@@ -64,6 +64,12 @@ When the download finishes, Home Assistant shows a **pending restart** notificat
 
 ## First run: one-time prompts [UNTESTED]
 
-The first time you open NeonPlan 3D from the sidebar, it asks you to sign in or create a free account, or to continue without one. Read the prompt carefully before you click, because it may not appear again.
+The first time you open NeonPlan 3D from the sidebar, a pop-up offers free Halloween and pets packs. To get them, you need a free customer account. You can choose **Later** to skip it, or **Don't show again** to hide the pop-up. The floor plan works without an account.
 
 > **Note:** Once you've completed the first-run prompts, they don't appear again. If you want to see them again, you'll need to uninstall and reinstall the integration.
+
+### Optional: Create a free account [UNTESTED]
+
+Only needed if you want the free packs. Click **Create a free account**, which opens the NeonPlan account page. You may see a cookie consent banner first. Accept or reject it as you prefer, then continue with the sign-up.
+
+![Cookie consent banner on the account page](images/step-account-cookie-consent.png)
