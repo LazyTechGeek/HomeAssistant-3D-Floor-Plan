@@ -14,58 +14,85 @@ To support Mastershort's future projects, you can donate here: https://www.paypa
 
 ## Contents
 
-1. [Find the install button](#step-1-find-the-install-button-on-the-neonplan-github-page) ([▶ 00:30](VIDEO_URL&t=30s))
-2. [Open the Marketplace](#step-2-open-the-marketplace) ([▶ 01:00](VIDEO_URL&t=60s))
-3. [Download the integration](#step-3-download-the-integration) ([▶ 01:30](VIDEO_URL&t=90s))
-4. [Restart Home Assistant](#step-4-restart-home-assistant) ([▶ 02:00](VIDEO_URL&t=120s))
-5. [Add the integration](#step-5-add-the-integration) ([▶ 03:00](VIDEO_URL&t=180s))
-6. [Open the panel and draw your floor plan](#step-6-open-the-panel-and-draw-your-floor-plan) ([▶ 04:00](VIDEO_URL&t=240s))
-7. [Add the 3D card to your dashboard (optional)](#step-7-add-the-3d-card-to-your-dashboard-optional) ([▶ 06:00](VIDEO_URL&t=360s))
+1. [Find the install button](#step-1-find-the-install-button-on-the-neonplan-github-page) ([▶ TBC](VIDEO_URL))
+2. [Open the Marketplace](#step-2-open-the-marketplace) ([▶ TBC](VIDEO_URL))
+3. [Download the integration](#step-3-download-the-integration) ([▶ TBC](VIDEO_URL))
+4. [Restart Home Assistant](#step-4-restart-home-assistant) ([▶ TBC](VIDEO_URL))
+5. [Add the integration](#step-5-add-the-integration) ([▶ TBC](VIDEO_URL))
+6. [Draw your first floor](#step-6-draw-your-first-floor) ([▶ TBC](VIDEO_URL))
+7. [Add doors, devices and furniture](#step-7-add-doors-devices-and-furniture) ([▶ TBC](VIDEO_URL))
+8. [Add the 3D card to your dashboard](#step-8-add-the-3d-card-to-your-dashboard) ([▶ TBC](VIDEO_URL))
+9. [Wall tablet (optional)](#step-9-wall-tablet-optional) ([▶ TBC](VIDEO_URL))
+10. [Backup and moving (optional)](#step-10-backup-and-moving-optional) ([▶ TBC](VIDEO_URL))
 
 Also covered: [Prerequisites](#prerequisites), [Manual install](#manual-install-docker-or-no-store-access-untested), [First run](#first-run-one-time-prompts-untested), and [the optional account step](#optional-create-a-free-account-untested).
+
+For anything not covered here, such as the interface, the 3D view, Pro add-ons and the shop, use the [official manual](https://mastershort.de/en/neonplan3d/manual/?lang=en). It's split into chapters, and the video points to the relevant ones.
 
 ## Prerequisites
 
 - Home Assistant **2025.1 or newer**.
 - Access to your Home Assistant config folder, if you use the manual install below.
 
-## Step 1: Find the install button on the NeonPlan GitHub page ([▶ 00:30](VIDEO_URL&t=30s))
+## Step 1: Find the install button on the NeonPlan GitHub page ([▶ TBC](VIDEO_URL))
 
 Go to https://github.com/Mastershort/neonplan3d and find the button that opens the integration in the Home Assistant store. The wording on the button is "Open your Home Assistant instance and open the NeonPlan 3D repository inside HACS" (or similar, depending on the version).
 
-## Step 2: Open the Marketplace ([▶ 01:00](VIDEO_URL&t=60s))
+## Step 2: Open the Marketplace ([▶ TBC](VIDEO_URL))
 
 Clicking the button takes you to your Home Assistant Marketplace (previously called HACS, or "Hacks").
 
-## Step 3: Download the integration ([▶ 01:30](VIDEO_URL&t=90s))
+The first time you open the Marketplace, Home Assistant asks you to accept a short disclaimer. Read it, tick that you understand the risks, and click **Continue**. If you skip this, Marketplace updates, such as the one for Smart IR in the video, will fail.
+
+## Step 3: Download the integration ([▶ TBC](VIDEO_URL))
 
 1. Find NeonPlan 3D in the list.
 2. Click the three dots (⋮) in the top corner.
 3. Select **Download**.
 4. Wait for the download to finish.
 
-## Step 4: Restart Home Assistant ([▶ 02:00](VIDEO_URL&t=120s))
+## Step 4: Restart Home Assistant ([▶ TBC](VIDEO_URL))
 
 When the download finishes, Home Assistant shows a **pending restart** notification. Restart Home Assistant to finish installing the integration.
 
-## Step 5: Add the integration ([▶ 03:00](VIDEO_URL&t=180s))
+## Step 5: Add the integration ([▶ TBC](VIDEO_URL))
 
 1. Go to **Settings → Devices & services → Add integration**.
 2. Search for **NeonPlan 3D** and select it.
 3. A pop-up appears saying the integration will be added to your dashboard. Click **Submit**.
 4. You're taken to the integration page. Go back to the main Home Assistant page and you'll see **NeonPlan 3D** in the sidebar.
 
-## Step 6: Open the panel and draw your floor plan [UNTESTED] ([▶ 04:00](VIDEO_URL&t=240s))
+## Step 6: Draw your first floor ([▶ TBC](VIDEO_URL))
 
-1. Click **NeonPlan 3D** in the sidebar.
-2. Switch to the **Editor** tab.
-3. Draw your first floor, or import an existing plan. The 3D view appears beside the plan as you draw.
+1. Click **NeonPlan 3D** in the sidebar and switch to the **Editor** tab at the top.
+2. Choose **Add floor** on the right. If you have floors in Home Assistant, NeonPlan 3D offers them directly.
+3. Create the rooms. Under **Build → Room**, choose **Rectangle**, **Free shape** or **By measure**. Drawing the rooms creates the walls, so you don't need to draw walls separately. Drawing a shape over an existing room can cut into it, so draw each room on its own.
+4. Name each room and assign it to a Home Assistant area.
 
-## Step 7: Add the 3D card to your dashboard (optional) [UNTESTED] ([▶ 06:00](VIDEO_URL&t=360s))
+Rooms that share a wall create one wall between them. For an open-plan space, select the shared edge and tick **No wall**.
+
+The plan saves itself while you edit.
+
+## Step 7: Add doors, devices and furniture ([▶ TBC](VIDEO_URL)) [UNTESTED]
+
+1. **Doors and windows:** tap a wall and use **Doors & windows**.
+2. **Devices:** tap a room and tap **Place** under **Devices** on the right. Devices are Home Assistant entities, such as lights, covers, thermostats, media players and sensors. **Place all …** adds the main devices of the area at once after asking.
+3. **Furniture:** furnish the room with **Furniture** and **Furnish …**.
+4. Switch to **3D** at the top. Tap a light, and it switches.
+
+## Step 8: Add the 3D card to your dashboard ([▶ TBC](VIDEO_URL)) [UNTESTED]
 
 1. Add a card of type `custom:neonplan3d-card`, using the visual editor or YAML.
 2. You don't need to add it as a resource. The card loads automatically.
 3. Options such as `floor` and `height` are optional.
+
+## Step 9: Wall tablet (optional) ([▶ TBC](VIDEO_URL))
+
+The video shows NeonPlan 3D running full screen on a spare tablet in kiosk mode. For the full setup, see the [wall tablet chapter](https://mastershort.de/en/neonplan3d/manual/wall-tablet/) of the manual.
+
+## Step 10: Backup and moving (optional) ([▶ TBC](VIDEO_URL))
+
+The video covers backing up your plan before a change. For restoring or moving a plan, see the [backup and moving chapter](https://mastershort.de/en/neonplan3d/manual/backup-and-moving/) of the manual.
 
 ## Manual install (Docker or no store access) [UNTESTED]
 
