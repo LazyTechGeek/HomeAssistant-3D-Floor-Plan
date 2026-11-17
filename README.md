@@ -161,7 +161,7 @@ Devices are your real Home Assistant entities, such as switches, lights, covers 
 
 When you add and move devices or furniture, it's easy to drag a wall or room by accident. **Undo** only works while you stay in the editor. If you switch to 3D and come back, the undo history is gone.
 
-Click **Lock floor plan** (in the floor panel, or right-click) so walls and rooms stay put.
+Right-click a room and choose **Lock floor plan** (it's also a button in the floor panel), so walls and rooms stay put.
 
 ![Lock floor plan](images/13-lock-floor-plan.jpg)
 
