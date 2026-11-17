@@ -1,120 +1,229 @@
 # Home Assistant 3D Floor Plan
 
-Add a 3D floor plan to your Home Assistant dashboard using the free NeonPlan 3D integration. This guide follows the same steps as the video.
+Add an interactive 3D floor plan to Home Assistant using the free version of NeonPlan 3D. This guide follows the same steps as the video, and each step links to that point in the video.
 
-Watch the video: [How to Add a 3D Floor Plan to Home Assistant (NeonPlan 3D)](VIDEO_URL)
+Watch the video: [How to Add a 3D Floor Plan to Home Assistant (NeonPlan 3D)](https://youtu.be/JfzmJGuAmIo)
+
+Article last updated: 17 November 2026
 
 ## Shout-out
 
-This guide uses **NeonPlan 3D**, created by **Mastershort**: https://github.com/Mastershort/neonplan3d
+This guide uses **NeonPlan 3D**, built by Torsten (**Mastershort**): https://github.com/Mastershort/neonplan3d
 
-For the full official manual, see https://mastershort.de/en/neonplan3d/manual/?lang=en (English; change `lang=en` for other languages).
+- Official manual: https://mastershort.de/en/neonplan3d/manual/?lang=en
+- Online demo: https://neonplan3d.mastershort.de/
+- Support the developer: https://www.paypal.com/donate/?hosted_button_id=Z3G2VWKSK5VJL
 
-To support Mastershort's future projects, you can donate here: https://www.paypal.com/donate/?hosted_button_id=Z3G2VWKSK5VJL
+This isn't a complete A to Z guide. The official manual covers everything in detail. This guide sticks to the fundamentals and a few things that caught me out.
 
 ## Contents
 
-1. [Find the install button](#step-1-find-the-install-button-on-the-neonplan-github-page) ([▶ TBC](VIDEO_URL))
-2. [Open the Marketplace](#step-2-open-the-marketplace) ([▶ TBC](VIDEO_URL))
-3. [Download the integration](#step-3-download-the-integration) ([▶ TBC](VIDEO_URL))
-4. [Restart Home Assistant](#step-4-restart-home-assistant) ([▶ TBC](VIDEO_URL))
-5. [Add the integration](#step-5-add-the-integration) ([▶ TBC](VIDEO_URL))
-6. [Draw your first floor](#step-6-draw-your-first-floor) ([▶ TBC](VIDEO_URL))
-7. [Add doors, devices and furniture](#step-7-add-doors-devices-and-furniture) ([▶ TBC](VIDEO_URL))
-8. [Add the 3D card to your dashboard](#step-8-add-the-3d-card-to-your-dashboard) ([▶ TBC](VIDEO_URL))
-9. [Wall tablet (optional)](#step-9-wall-tablet-optional) ([▶ TBC](VIDEO_URL))
-10. [Backup and moving (optional)](#step-10-backup-and-moving-optional) ([▶ TBC](VIDEO_URL))
+1. [Install NeonPlan 3D](#step-1-install-neonplan-3d)
+2. [Check for updates](#step-2-check-for-updates)
+3. [First launch](#step-3-first-launch)
+4. [Ways to create your floor plan](#step-4-ways-to-create-your-floor-plan)
+5. [Add a floor and import your 2D plan](#step-5-add-a-floor-and-import-your-2d-plan)
+6. [Draw the rooms](#step-6-draw-the-rooms)
+7. [Name the rooms and assign areas](#step-7-name-the-rooms-and-assign-areas)
+8. [Add doors and windows](#step-8-add-doors-and-windows)
+9. [Add devices](#step-9-add-devices)
+10. [Tip: lock the floor plan](#step-10-tip-lock-the-floor-plan)
+11. [Add furniture](#step-11-add-furniture)
+12. [Add wall light switches (optional)](#step-12-add-wall-light-switches-optional)
+13. [Preview in 3D](#step-13-preview-in-3d)
+14. [Add it to your dashboard](#step-14-add-it-to-your-dashboard)
 
-Also covered: [Prerequisites](#prerequisites), [Manual install](#manual-install-docker-or-no-store-access-untested), [First run](#first-run-one-time-prompts-untested), and [the optional account step](#optional-create-a-free-account-untested).
-
-For anything not covered here, such as the interface, the 3D view, Pro add-ons and the shop, use the [official manual](https://mastershort.de/en/neonplan3d/manual/?lang=en). It's split into chapters, and the video points to the relevant ones.
+Also covered: [Prerequisites](#prerequisites), [Manual install](#manual-install-docker-or-no-store-access-untested) and [Further reading](#further-reading).
 
 ## Prerequisites
 
-- Home Assistant **2025.1 or newer**.
-- Access to your Home Assistant config folder, if you use the manual install below.
+- Home Assistant installed and running. Ideally **2026.11 or newer**, which includes the Marketplace. On an older version, you'll install through HACS instead. The steps are almost the same.
+- A 2D floor plan of your home (a photo is fine), or your room measurements.
+- Optional: smart devices already set up in Home Assistant, so you can control them from the plan.
 
-## Step 1: Find the install button on the NeonPlan GitHub page ([▶ TBC](VIDEO_URL))
+## Step 1: Install NeonPlan 3D ([▶ 2:42](https://youtu.be/JfzmJGuAmIo?t=162))
 
-Go to https://github.com/Mastershort/neonplan3d and find the button that opens the integration in the Home Assistant store. The wording on the button is "Open your Home Assistant instance and open the NeonPlan 3D repository inside HACS" (or similar, depending on the version).
+1. Open the [installation chapter of the manual](https://mastershort.de/en/neonplan3d/manual/installation/) and click **Open Marketplace repository on My Home Assistant**.
 
-## Step 2: Open the Marketplace ([▶ TBC](VIDEO_URL))
+   ![Install button in the NeonPlan 3D manual](images/01-install-button.jpg)
 
-Clicking the button takes you to your Home Assistant Marketplace (previously called HACS, or "Hacks").
+2. Check the Home Assistant URL and click **Save**, then **Open link**. Sign in if asked.
+3. On the NeonPlan 3D page in the Marketplace, click **Install** (top right), then **Install** again.
+4. Click **Submit** to add it to your sidebar, then **Finish**.
 
-The first time you open the Marketplace, Home Assistant asks you to accept a short disclaimer. Read it, tick that you understand the risks, and click **Continue**. If you skip this, Marketplace updates, such as the one for Smart IR in the video, will fail.
+   ![NeonPlan 3D in the Marketplace](images/02-marketplace-install.jpg)
 
-## Step 3: Download the integration ([▶ TBC](VIDEO_URL))
+5. Check it's there: go to **Settings → Devices & services** and search for NeonPlan 3D. If it isn't listed, click **Add integration** and search for **NeonPlan 3D**. If you still can't find it, restart Home Assistant and try again.
 
-1. Find NeonPlan 3D in the list.
-2. Click the three dots (⋮) in the top corner.
-3. Select **Download**.
-4. Wait for the download to finish.
+> **First time opening the Marketplace?** Home Assistant asks you to accept a short disclaimer. Read it, tick that you understand the risks, and click **Continue**. If you skip this, Marketplace updates will fail.
+>
+> ![Marketplace first launch disclaimer](images/marketplace-first-launch-warning.png)
 
-## Step 4: Restart Home Assistant ([▶ TBC](VIDEO_URL))
+## Step 2: Check for updates ([▶ 5:13](https://youtu.be/JfzmJGuAmIo?t=313))
 
-When the download finishes, Home Assistant shows a **pending restart** notification. Restart Home Assistant to finish installing the integration.
+NeonPlan 3D is updated often, so check for updates straight after installing.
 
-## Step 5: Add the integration ([▶ TBC](VIDEO_URL))
+1. Go to **Settings** and click the updates banner.
+2. Find **NeonPlan 3D** and click **Update**.
+3. Restart Home Assistant if asked.
 
-1. Go to **Settings → Devices & services → Add integration**.
-2. Search for **NeonPlan 3D** and select it.
-3. A pop-up appears saying the integration will be added to your dashboard. Click **Submit**.
-4. You're taken to the integration page. Go back to the main Home Assistant page and you'll see **NeonPlan 3D** in the sidebar.
+![NeonPlan 3D in the updates list](images/03-updates.jpg)
 
-## Step 6: Draw your first floor ([▶ TBC](VIDEO_URL))
+## Step 3: First launch ([▶ 5:46](https://youtu.be/JfzmJGuAmIo?t=346))
 
-1. Click **NeonPlan 3D** in the sidebar and switch to the **Editor** tab at the top.
-2. Choose **Add floor** on the right. If you have floors in Home Assistant, NeonPlan 3D offers them directly.
-3. Create the rooms. Under **Build → Room**, choose **Rectangle**, **Free shape** or **By measure**. Drawing the rooms creates the walls, so you don't need to draw walls separately. Drawing a shape over an existing room can cut into it, so draw each room on its own.
-4. Name each room and assign it to a Home Assistant area.
+Click **NeonPlan 3D** in the sidebar. The first time, a pop-up offers a free account. You only need one for the paid bundles and the free seasonal packs. Choose **Later** to carry on with what's included for free.
 
-Rooms that share a wall create one wall between them. For an open-plan space, select the shared edge and tick **No wall**.
+![First launch pop-up](images/04-first-run-popup.jpg)
 
-The plan saves itself while you edit.
+## Step 4: Ways to create your floor plan ([▶ 6:24](https://youtu.be/JfzmJGuAmIo?t=384))
 
-## Step 7: Add doors, devices and furniture ([▶ TBC](VIDEO_URL)) [UNTESTED]
+There are a few ways to start:
 
-1. **Doors and windows:** tap a wall and use **Doors & windows**.
-2. **Devices:** tap a room and tap **Place** under **Devices** on the right. Devices are Home Assistant entities, such as lights, covers, thermostats, media players and sensors. **Place all …** adds the main devices of the area at once after asking.
-3. **Furniture:** furnish the room with **Furniture** and **Furnish …**.
-4. Switch to **3D** at the top. Tap a light, and it switches.
+- **iPhone or iPad with LiDAR:** scan your rooms with a RoomPlan app and import the scan.
+- **Sweet Home 3D:** if you've already drawn your home there, import the `.sh3d` file.
+- **By hand:** draw it over a photo of your 2D plan, or over a sketch with your own measurements. This is what the guide and video cover.
 
-## Step 8: Add the 3D card to your dashboard ([▶ TBC](VIDEO_URL)) [UNTESTED]
+For the import options, see the [official manual](https://mastershort.de/en/neonplan3d/manual/?lang=en).
 
-1. Add a card of type `custom:neonplan3d-card`, using the visual editor or YAML.
-2. You don't need to add it as a resource. The card loads automatically.
-3. Options such as `floor` and `height` are optional.
+## Step 5: Add a floor and import your 2D plan ([▶ 7:16](https://youtu.be/JfzmJGuAmIo?t=436))
 
-## Step 9: Wall tablet (optional) ([▶ TBC](VIDEO_URL))
+1. Switch from **3D** to **Editor** at the top.
+2. Click the floor menu and choose **Add floor**. It defaults to **Ground floor**, elevation **0** and a ceiling height of **2.5 m**.
 
-The video shows NeonPlan 3D running full screen on a spare tablet in kiosk mode. For the full setup, see the [wall tablet chapter](https://mastershort.de/en/neonplan3d/manual/wall-tablet/) of the manual.
+   ![Add floor](images/05-add-floor.jpg)
 
-## Step 10: Backup and moving (optional) ([▶ TBC](VIDEO_URL))
+3. Expand **Template** and click **Choose image** to load a photo of your floor plan.
+4. Click **Scale with ruler**, click two points you know the distance between, enter that distance and click **Apply scale**.
 
-The video covers backing up your plan before a change. For restoring or moving a plan, see the [backup and moving chapter](https://mastershort.de/en/neonplan3d/manual/backup-and-moving/) of the manual.
+   ![Scaling the floor plan image](images/06-scale-with-ruler.jpg)
+
+## Step 6: Draw the rooms ([▶ 9:06](https://youtu.be/JfzmJGuAmIo?t=546))
+
+**Draw rooms, not walls.** Drawing the rooms creates the walls automatically, so you don't need the Wall tool.
+
+1. Go to **Build → Room** and choose **Rectangle**, **Free shape** or **By measure**.
+
+   ![Room drawing options](images/07-room-options.jpg)
+
+2. Trace each room. With Free shape, finish on the starting point (it shows a circle) so the shape closes cleanly.
+3. Drag the corners so neighbouring rooms snap together.
+4. **Open-plan rooms:** select a room, scroll down to the wall heights, and set **No wall** on the edges you don't want.
+
+   ![Setting No wall on an open-plan edge](images/08-no-wall.jpg)
+
+> **Tip:** if a corner won't line up exactly, hold **Alt** while you drag it to place it precisely.
+
+## Step 7: Name the rooms and assign areas ([▶ 14:21](https://youtu.be/JfzmJGuAmIo?t=861))
+
+Select each room and fill in:
+
+- **Name**, for example Lounge.
+- **Area**: the matching Home Assistant area.
+- **Further names for the voice** (optional): extra names Home Assistant Voice can use for the room.
+
+![Room name, voice names and area](images/09-room-name-area.jpg)
+
+## Step 8: Add doors and windows ([▶ 15:26](https://youtu.be/JfzmJGuAmIo?t=926))
+
+**Doors**
+
+1. Go to **Build → Doors & windows** and click a wall. It starts as a door.
+2. If it opens the wrong way, use **Swap hinge side** or **Reverse opening direction**.
+3. Choose a **Style** if you like. Most other settings can stay as they are.
+
+![Door settings](images/10-door-panel.jpg)
+
+**Windows**
+
+1. Click a wall and pick a window type, such as **Double window**. You can set the width if you know it.
+2. Under **Blind**, choose your smart blind. NeonPlan often finds it automatically. You don't need to set which side is outside.
+
+![Window blind setting](images/11-window-blind.jpg)
+
+> **Curtains:** the blind field takes one cover. If you only have motorised curtains, pick them there. The animation shows a roller blind, but it still shows open or closed. If a window has a blind and curtains, put the blind there and add the curtains as a separate device beside the window (Step 9).
+>
+> **Update:** a motorised curtain you can link to Home Assistant is now in the paid **Architecture & Fit-out** pack.
+
+## Step 9: Add devices ([▶ 19:19](https://youtu.be/JfzmJGuAmIo?t=1159))
+
+Devices are your real Home Assistant entities, such as switches, lights, covers and sensors.
+
+1. Click **Select** in the toolbar first. The Devices panel only appears in Select mode.
+2. Click a room. The **Devices** panel shows **This area**, **Other areas** and **No area**. If a device is missing, it may not be assigned to an area in Home Assistant, so check **No area**.
+3. Find a device and click **Place**, then drag it to where it is in the room. The ☆ adds it to the room panel without placing it.
+
+![Select mode with a room selected](images/12-select-room.jpg)
+
+## Step 10: Tip: lock the floor plan ([▶ 23:40](https://youtu.be/JfzmJGuAmIo?t=1420))
+
+When you add and move devices or furniture, it's easy to drag a wall or room by accident. **Undo** only works while you stay in the editor. If you switch to 3D and come back, the undo history is gone.
+
+Click **Lock floor plan** (in the floor panel, or right-click) so walls and rooms stay put.
+
+![Lock floor plan](images/13-lock-floor-plan.jpg)
+
+## Step 11: Add furniture ([▶ 24:18](https://youtu.be/JfzmJGuAmIo?t=1458))
+
+1. Click **Furniture** and search, or filter by room. Items with a 🔒 are from paid packs.
+2. Items go into the middle of the selected room. Drag them into place, and hold **Alt** to fine-tune the angle.
+3. **Lights** are under furniture too. Link a light to its Home Assistant entity so you can tap it in 3D.
+
+![Furniture panel](images/14-furniture.jpg)
+
+> **Tip:** there are no built-in kitchen units in the free furniture. A table resized to the worktop, with small cupboards underneath, makes a convincing kitchen.
+
+## Step 12: Add wall light switches (optional) ([▶ 29:04](https://youtu.be/JfzmJGuAmIo?t=1744))
+
+As well as clickable lights, you can add a physical switch on the wall:
+
+1. In **Furniture**, search for **light switch**.
+2. Place it on the wall and link it to your switch entity.
+
+![Light switch furniture](images/15-light-switch.jpg)
+
+## Step 13: Preview in 3D ([▶ 30:25](https://youtu.be/JfzmJGuAmIo?t=1825))
+
+Switch to **3D** at the top. Tap a light or switch to turn it on and off.
+
+![3D preview](images/16-3d-preview.jpg)
+
+## Step 14: Add it to your dashboard ([▶ 31:24](https://youtu.be/JfzmJGuAmIo?t=1884))
+
+The easiest way is a card template, so you don't need to write YAML.
+
+1. In NeonPlan, go to **Settings → Card templates** and create one. Set the size to fill the screen and pick a style.
+
+   ![Card templates](images/17-card-templates.jpg)
+
+2. In your dashboard, add a new view and choose the **Panel (single card)** layout, so the card fills the screen.
+
+   ![Panel view layout](images/18-panel-view.jpg)
+
+3. Add a card, search for **NeonPlan 3D** and choose your template.
+4. Optional: add a home button that goes back to your main dashboard, and a navigation button on your main dashboard that opens the plan.
+
+![NeonPlan 3D card on a dashboard](images/19-dashboard-card.jpg)
+
+If you prefer YAML, a card using a template only needs:
+
+```yaml
+type: custom:neonplan3d-card
+template: YOUR_TEMPLATE_NAME
+```
+
+For every card option, see the [dashboard card chapter](https://mastershort.de/en/neonplan3d/manual/dashboard-card/) of the manual.
 
 ## Manual install (Docker or no store access) [UNTESTED]
 
-If you can't use the store, for example when running Home Assistant in Docker, copy the integration by hand:
+If you can't use the Marketplace or HACS, copy the integration by hand:
 
 1. Download or clone https://github.com/Mastershort/neonplan3d.
-2. Copy the `custom_components/neonplan3d` folder (the whole folder, not individual files).
-3. Paste it into `config/custom_components/` in your Home Assistant config directory, so you end up with `config/custom_components/neonplan3d/`.
-4. Restart Home Assistant.
+2. Copy the `custom_components/neonplan3d` folder (the whole folder).
+3. Paste it into `config/custom_components/`, so you end up with `config/custom_components/neonplan3d/`.
+4. Restart Home Assistant, then add the integration as in Step 1.
 
-## First run: one-time prompts [UNTESTED]
+## Further reading
 
-The first time you open NeonPlan 3D from the sidebar, a pop-up offers free Halloween and pets packs. To get them, you need a free customer account. You can choose **Later** to skip it, or **Don't show again** to hide the pop-up. The floor plan works without an account.
-
-> **Note:** Once you've completed the first-run prompts, they don't appear again. If you want to see them again, you'll need to uninstall and reinstall the integration.
-
-### Optional: Create a free account [UNTESTED]
-
-Only needed if you want the free packs. Click **Create a free account**, which opens the NeonPlan account page. You may see a cookie consent banner first. Accept or reject it as you prefer, then continue with the sign-up.
-
-![Cookie consent banner on the account page](images/step-account-cookie-consent.png)
-
-Once the banner is dealt with, the page offers **Login** or **Register**. Registering gives you a free customer account. After you confirm your email, you get a NeonPlan 3D licence key, which unlocks the free packs (Fun pack: Pets, Fun pack: Halloween, and Module: Window watch).
-
-![Login and register options on the account page](images/step-account-login-register.png)
+- [Wall tablet](https://mastershort.de/en/neonplan3d/manual/wall-tablet/)
+- [Backup and moving](https://mastershort.de/en/neonplan3d/manual/backup-and-moving/)
+- [Full manual](https://mastershort.de/en/neonplan3d/manual/?lang=en)
