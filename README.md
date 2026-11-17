@@ -203,7 +203,13 @@ The easiest way is a card template, so you don't need to write YAML.
    <img src="images/18-panel-view.jpg" alt="Panel view layout" width="55%">
 
 3. Add a card, search for **NeonPlan 3D** and choose your template.
-4. Optional: add a home button that goes back to your main dashboard, and a navigation button on your main dashboard that opens the plan.
+4. Optional: in the card template, fill in **Button to a dashboard (path)** with your main dashboard's path (for example `/lovelace/home`). This adds a home button to the top right of the card.
+
+   <img src="images/19-dashboard-path.jpg" alt="Button to a dashboard (path) setting" width="50%">
+
+5. Optional: on your main dashboard, add a button card with **Tap behaviour: Navigate** pointing at the new view, so you can open the plan from there.
+
+   <img src="images/20-navigation-button.jpg" alt="Navigation button card" width="55%">
 
 ![NeonPlan 3D card on a dashboard](images/19-dashboard-card.jpg)
 
