@@ -67,13 +67,13 @@ NeonPlan 3D is updated often, so check for updates straight after installing.
 2. Find **NeonPlan 3D** and click **Update**.
 3. Restart Home Assistant if asked.
 
-![NeonPlan 3D in the updates list](images/03-updates.jpg)
+<img src="images/03-updates.jpg" alt="NeonPlan 3D in the updates list" width="45%">
 
 ## Step 3: First launch ([▶ 5:46](https://youtu.be/JfzmJGuAmIo?t=346))
 
 Click **NeonPlan 3D** in the sidebar. The first time, a pop-up offers a free account. You only need one for the paid bundles and the free seasonal packs. Choose **Later** to carry on with what's included for free.
 
-![First launch pop-up](images/04-first-run-popup.jpg)
+<img src="images/04-first-run-popup.jpg" alt="First launch pop-up" width="60%">
 
 ## Step 4: Ways to create your floor plan ([▶ 6:24](https://youtu.be/JfzmJGuAmIo?t=384))
 
