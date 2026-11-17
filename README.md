@@ -46,12 +46,12 @@ NeonPlan 3D is built by Torsten (Mastershort). This guide isn't a replacement fo
 
 1. Open the [installation chapter of the manual](https://mastershort.de/en/neonplan3d/manual/installation/) and click this button:
 
-   ![Open Marketplace repository on My Home Assistant](images/btn-open-marketplace.jpg)
+   <p align="center"><img src="images/btn-open-marketplace.png" alt="Open Marketplace repository on My Home Assistant" width="400"></p>
 
 2. Check your Home Assistant URL, click **Save**, then **Open link**.
 3. In the Marketplace, click **Install** (top right), then **Install** again:
 
-   ![Install button](images/btn-install.jpg)
+   <p align="center"><img src="images/btn-install.png" alt="Install button" width="150"></p>
 
 4. Click **Submit** to add it to the sidebar, then **Finish**.
 
@@ -59,7 +59,11 @@ NeonPlan 3D is built by Torsten (Mastershort). This guide isn't a replacement fo
 > **Older than 2026.11?** You won't have the Marketplace. Install NeonPlan 3D through HACS instead. The steps are almost the same.
 
 > [!TIP]
-> **Not showing up?** Go to **Settings → Devices & services → Add integration** and search for **NeonPlan 3D**. Still missing? Restart Home Assistant and try again.
+> **Not showing up?**<br>
+> Go to **Settings**<br>
+> → **Devices & services**<br>
+> → **Add integration** and search for **NeonPlan 3D**.<br>
+> **Still missing?** Restart Home Assistant and try again.
 
 ## Step 2 – Check for updates
 
