@@ -155,7 +155,7 @@ Devices are your real Home Assistant entities, such as switches, lights, covers 
 2. Click a room. The **Devices** panel shows **This area**, **Other areas** and **No area**. If a device is missing, it may not be assigned to an area in Home Assistant, so check **No area**.
 3. Find a device and click **Place**, then drag it to where it is in the room. The ☆ adds it to the room panel without placing it.
 
-![Select mode with a room selected](images/12-select-room.jpg)
+![Devices panel in Select mode](images/devices-panel.jpg)
 
 ## Step 10: Tip: lock the floor plan ([▶ 23:40](https://youtu.be/JfzmJGuAmIo?t=1420))
 
