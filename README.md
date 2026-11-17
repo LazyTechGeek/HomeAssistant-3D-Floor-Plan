@@ -60,7 +60,8 @@ NeonPlan 3D is built by Torsten (Mastershort). This guide isn't a replacement fo
 
 > [!TIP]
 > **Not showing up?**<br>
-> Go to **Settings**<br>
+> Go to:<br>
+> → **Settings**<br>
 > → **Devices & services**<br>
 > → **Add integration** and search for **NeonPlan 3D**.<br>
 > **Still missing?** Restart Home Assistant and try again.
@@ -69,7 +70,13 @@ NeonPlan 3D is built by Torsten (Mastershort). This guide isn't a replacement fo
 
 ▶ **Watch this step:** [Check for updates (5:13)](https://youtu.be/JfzmJGuAmIo?t=313)
 
-NeonPlan 3D is updated often. Go to **Settings**, click the updates banner, update **NeonPlan 3D**, and restart Home Assistant if asked.
+NeonPlan 3D is updated often, so check straight after installing.
+
+Go to:<br>
+→ **Settings**<br>
+→ the **updates** banner<br>
+→ **NeonPlan 3D** → **Update**<br>
+Restart Home Assistant if asked.
 
 ## Step 3 – First launch
 
