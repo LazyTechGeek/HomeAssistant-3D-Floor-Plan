@@ -57,7 +57,7 @@ Also covered: [Prerequisites](#prerequisites), [Manual install](#manual-install-
 
 > **First time opening the Marketplace?** Home Assistant asks you to accept a short disclaimer. Read it, tick that you understand the risks, and click **Continue**. If you skip this, Marketplace updates will fail.
 >
-> ![Marketplace first launch disclaimer](images/marketplace-first-launch-warning.png)
+> <img src="images/marketplace-first-launch-warning.png" alt="Marketplace first launch disclaimer" width="50%">
 
 ## Step 2: Check for updates ([▶ 5:13](https://youtu.be/JfzmJGuAmIo?t=313))
 
