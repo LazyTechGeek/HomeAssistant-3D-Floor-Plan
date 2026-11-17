@@ -200,7 +200,7 @@ The easiest way is a card template, so you don't need to write YAML.
 
 2. In your dashboard, add a new view and choose the **Panel (single card)** layout, so the card fills the screen.
 
-   ![Panel view layout](images/18-panel-view.jpg)
+   <img src="images/18-panel-view.jpg" alt="Panel view layout" width="55%">
 
 3. Add a card, search for **NeonPlan 3D** and choose your template.
 4. Optional: add a home button that goes back to your main dashboard, and a navigation button on your main dashboard that opens the plan.
