@@ -136,9 +136,12 @@ Select each room and fill in:
 **Windows**
 
 1. Click a wall and pick a window type, such as **Double window**. You can set the width if you know it.
-2. Under **Blind**, choose your smart blind. NeonPlan often finds it automatically. You don't need to set which side is outside.
 
-![Window blind setting](images/11-window-blind.jpg)
+   ![Double window selected](images/11-double-window.jpg)
+
+2. Scroll down to **Blind** and choose your smart blind. NeonPlan often finds it automatically. You don't need to set which side is outside.
+
+   <img src="images/12-window-blind.jpg" alt="Blind setting" width="35%">
 
 > **Curtains:** the blind field takes one cover. If you only have motorised curtains, pick them there. The animation shows a roller blind, but it still shows open or closed. If a window has a blind and curtains, put the blind there and add the curtains as a separate device beside the window (Step 9).
 >
