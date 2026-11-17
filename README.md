@@ -103,7 +103,7 @@ For the import options, see the [official manual](https://mastershort.de/en/neon
 
 1. Go to **Build → Room** and choose **Rectangle**, **Free shape** or **By measure**.
 
-   ![Room drawing options](images/07-room-options.jpg)
+   <img src="images/07-room-options.jpg" alt="Build, Room options" width="50%">
 
 2. Trace each room. With Free shape, finish on the starting point (it shows a circle) so the shape closes cleanly.
 3. Drag the corners so neighbouring rooms snap together.
