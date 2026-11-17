@@ -121,7 +121,7 @@ Select each room and fill in:
 - **Area**: the matching Home Assistant area.
 - **Further names for the voice** (optional): extra names Home Assistant Voice can use for the room.
 
-![Room name, voice names and area](images/09-room-name-area.jpg)
+<img src="images/09-room-name-area.jpg" alt="Room name, voice names and area" width="35%">
 
 ## Step 8: Add doors and windows ([▶ 15:26](https://youtu.be/JfzmJGuAmIo?t=926))
 
