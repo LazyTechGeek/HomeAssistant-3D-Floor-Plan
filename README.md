@@ -191,10 +191,16 @@ Go to **Build → Doors & windows** and click a wall. It starts as a door. Pick 
 ▶ **Watch this step:** [Add it to your dashboard (31:24)](https://youtu.be/JfzmJGuAmIo?t=1884)
 
 1. In NeonPlan, go to **Settings → Card templates** and create a template. Set the size to fill the screen and pick a style.
-2. *Optional:* in the template, set **Button to a dashboard (path)** to your main dashboard (for example `/lovelace/home`). This adds a home button to the card.
-3. In Home Assistant, add a new dashboard view with the **Panel (single card)** layout.
-4. Add a card, search for **NeonPlan 3D** and choose your template.
-5. *Optional:* on your main dashboard, add a button card with **Tap behaviour → Navigate** to the new view.
+2. In Home Assistant, add a new dashboard view with the **Panel (single card)** layout.
+3. Add a card, search for **NeonPlan 3D** and choose your template.
+
+> [!TIP]
+> **Optional: add buttons to jump between the two views.**
+>
+> | Direction | How |
+> |---|---|
+> | 3D plan → main dashboard | In the card template, set **Button to a dashboard (path)** to your main dashboard (for example `/lovelace/home`). A home button appears on the 3D card. |
+> | Main dashboard → 3D plan | On your main dashboard, add a button card with **Tap behaviour → Navigate**, pointing to the NeonPlan 3D view you just created. |
 
 Prefer YAML? A card that uses a template only needs:
 
