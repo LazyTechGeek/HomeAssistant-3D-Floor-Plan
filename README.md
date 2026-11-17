@@ -95,7 +95,7 @@ For the import options, see the [official manual](https://mastershort.de/en/neon
 3. Expand **Template** and click **Choose image** to load a photo of your floor plan.
 4. Click **Scale with ruler**, click two points you know the distance between, enter that distance and click **Apply scale**.
 
-   ![Scaling the floor plan image](images/06-scale-with-ruler.jpg)
+   <img src="images/06-scale-with-ruler.jpg" alt="Template panel with the ruler" width="35%">
 
 ## Step 6: Draw the rooms ([▶ 9:06](https://youtu.be/JfzmJGuAmIo?t=546))
 
